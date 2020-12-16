@@ -30,9 +30,13 @@
 
                     <div id="recherchedeville">
                         <i class="fas fa-map-marker-alt"></i>
-                        <!-- Zone de recherche -->
+                        <form method="post" action="traitement.php">
+                            <p>
+                                <input type="text" name="lieu" id="lieu" placeholder="Marseille" size="30" maxlength="10" />
+                            </p>
+                        </form>
                         <div id="boutonrecherche">
-                        Recherche    
+                        Rechercher    
                         </div>
                     </div>
 
@@ -111,7 +115,7 @@
                     </aside>
                 </session>
 
-                <div id="sessiondepagebas">
+                <session>
                         <h2>Activités a Marseille</h2>
 
                         <div id="listeactivitemarseille">
@@ -133,14 +137,37 @@
                                
                             <div id="parclongchamp">
                                 <a href="#" class="photoparclongchamp"> <p> Parc Longchamp </p> <img src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" /></a> 
-                                       
+                        </div>
 
-                         </div>
+                </session>
 
+                <footer>
 
+                    <div id="apropos">
+                        <h3> A propos </h3>
+                        <ul>
+                            <li><a href="#">Fonctionnement du site</a></li>
+                            <li><a href="#">Condition générales de vente</a></li>
+                            <li><a href="#">Données et confidentialité</a></li>
+                        </ul>
+                    </div>
 
-                </div>
+                    <div id="noshebergements">
+                        <h3> Nos hébergements </h3>
+                        <ul>
+                            <li><a href="#">Charte qualité</a></li>
+                            <li><a href="#">Soumettre votre hôtel</a></li>
+                        </ul>
+                    </div>
 
+                    <div id="assistance">
+                        <h3> Assistance </h3>
+                        <ul>
+                            <li><a href="#">Centre d'aide</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </div>
+                </footer>
         </div>
         </body>
    
