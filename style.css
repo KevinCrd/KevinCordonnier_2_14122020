@@ -1,0 +1,82 @@
+/* Définition de la police personnalisé */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('police\Raleway.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body et elements globaux */
+
+body
+{
+    background-color: white;
+    font-style: 'Raleway'
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    color: #0065FC;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img
+{
+    display: flex;
+    width: 190px;
+    height: 90px;
+    flex-direction: row;
+
+}
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    align-self: flex-end;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #0065FC;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Section de page haut */
+
+/* Section */
+
+/* Article */
+
+/* Aside */
+
+/* Section Bas */
+
+/* Footer */
