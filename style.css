@@ -5,15 +5,15 @@
     font-family: 'Raleway';
     src: url('police\Raleway.ttf');
     font-weight: normal;
-    font-style: normal;
+    font-style: 'normal';
 }
 
 /* Body et elements globaux */
 
 body
 {
+    font-family: 'Raleway';
     background-color: white;
-    font-style: 'Raleway'
 }
 
 /* Header */
@@ -24,6 +24,7 @@ header
     color: #0065FC;
     justify-content: space-between;
     align-items: flex-start;
+    font-size: 0.8em;
     
 }
 
@@ -71,6 +72,45 @@ nav a:hover
 
 /* Section de page haut */
 
+#sectiondepagehaut
+{
+
+}
+
+h1, h2
+{
+    font-size: 1.5em;
+    color: black;
+}
+#modulederecherche
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: right;
+    flex-basis: 10%;
+}
+#modulederecherche a
+{
+    background-color: #0065FC;
+    border-radius: 0px 8px 8px 0px;
+    text-align: center;
+    margin: 16px 0px 16px 0px;
+    padding: 5px 11px 0px 5px;
+    font-size: 0.9em;
+    text-decoration:none;
+    color: white;
+    
+
+}
+#logordv
+{
+    display: flex;
+    padding: 6px 5px 0px 5px;
+    background-color: #F2F2F2;
+    border-radius: 8px 0px 0px 8px;
+    margin: 16px 0px 16px 0px;
+}
 /* Section */
 
 /* Article */
