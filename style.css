@@ -114,44 +114,113 @@ h1, h2
 #filtres
 {
     display: flex;
-    margin: 20px;
+    margin-left: 2%;
     flex-wrap: nowrap;
-    justify-content: justify;
+    max-width: 100%;
 }
 #filtres p
 {
-    position: relative;
-    right: 1%;
+    position: flex;
     font-weight: bold;
-
-
 }
-#filtres a
+
+#filtres ul
 {
     display: flex;
-    border-radius: 0px 10px 10px 0px;
-    padding: 6px 5px 0px 5px;
-    margin: 1% 1% 1% 0%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0% 2% 0% 3%;
+}
+
+#filtres a
+{
     text-decoration: none;
-    text-align: center;
+}
+
+#filtres a:hover
+{
+    text-decoration: underline;
+}
+
+
+#filtres span
+{
+    margin: 5% 5% 5% 5%;
+    border-radius: 10px;
+    padding: 5% 8% 5% 25%;
     border: 3px #F2F2F2 solid;
     font-weight: bold;
-
 }
-#logoeconomique
+
+#economique i
 {
     position: relative;
-    bottom: 82%;
-    height: 15%;
-    border: 7px #0065FC solid;
+    left: 26%;
+    border: 10px #DEEBFF solid;
+    background-color:#DEEBFF  ;
+    color: #0065FC;
     border-radius: 50%;
+    max-width: 50%;
+    max-height: 50%;
 
+}
+
+#famillial i
+{
+    position: relative;
+    left: 30%;
+    top: 2%;
+    border: 10px #DEEBFF solid;
+    background-color:#DEEBFF  ;
+    color: #0065FC;
+    border-radius: 50%;
+    width: 14%;
+    height: 30%;
+}
+
+#famillial span
+{
+    margin-left: 10%;
+}
+#romantique i
+{
+    position: relative;
+    left: 26%;
+    border: 10px #DEEBFF solid;
+    background-color:#DEEBFF  ;
+    color: #0065FC;
+    border-radius: 50%;
+    width: 13%;
+    height: 35%;
+
+}
+
+#animauxautorises i
+{
+    position: relative;
+    left: 19%;
+    bottom: 5%;
+    border: 11px #DEEBFF solid;
+    background-color:#DEEBFF  ;
+    color: #0065FC;
+    border-radius: 50%;
+    width: 11%;
+    height: 42%;
+
+}
+#animauxautorises span
+{
+    margin-left: 1%;
 }
 #logementdisponible i
 {
-    color: #8ab6f8;
+    color: white;
+    background-color: #0065FC;
     border-radius: 50%;
-    border: 1px #F2F2F2 solid;
+    border: 2px #F2F2F2 solid;
 
 }
     
