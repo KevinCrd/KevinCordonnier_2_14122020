@@ -15,8 +15,8 @@
 
                     <nav>
                         <ul>
-                            <li><a href="#">Hébergement</a></li>
-                            <li><a href="#">Activites</a></li>
+                            <li><a href="projet2.html#hebergement">Hébergement</a></li>
+                            <li><a href="projet2.html#activites">Activites</a></li>
                             <li><a href="#">S'inscrire</a></li>
                         </ul>
                     </nav>
@@ -27,7 +27,7 @@
 
                         <div id="modulederecherche">
                             <div id="logordv">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             </div>
                         <form method="post" action="traitement.php">
                             <p>
@@ -38,15 +38,21 @@
                         </div>
 
                     <div id="filtres">
-                        <p>Filtres</p> 
-                         <i class="fas fa-money-bill-wave"></i>
+                        <p>Filtres</p>
+                        <div id="logoeconomique"> <i class="fas fa-money-bill-wave" aria-hidden="true"></i> </div>
                         <a href="#" id="Economique">Economique</a>
-                            <i class="fas fa-child"></i>
+                            <div id="famillial"> <i class="fas fa-child"></i> </div> 
                         <a href="#" id="Famillial">Famillial</a>
-                            <i class="fab fa-gratipay"></i>
+                            <div id="logoromantique"> <i class="fab fa-gratipay"></i> </div> 
                         <a href="#" id="Romantique">Romantique</a>
-                            <i class="fas fa-dog"></i>
+                            <div id="logoanimaux"> <i class="fas fa-dog"></i> </div> 
                         <a href="#" id="Animauxautorises">Animaux autorisés</a>
+                        <ul>
+                            <li><i class="fas fa-money-bill-wave"></i><a href="#" id="Economique">Economique</a></li>
+                            <li><a href="#" id="Famillial">Famillial</a></li>
+                            <li><a href="#" id="Romantique">Romantique</a></li>
+                            <li><a href="#" id="Animauxautorises">Animaux autorisés</a></li>
+                        </ul>
                     </div>
                     <div id="logementdisponible">
                         <i class="fas fa-info-circle"></i>
@@ -55,7 +61,7 @@
 
                 <section>
                     <article>
-                        <h2> Hébergements à Marseille </h2>
+                        <h2 id="hebergement"> Hébergements à Marseille </h2>
 
                             <a href="#" id="aubergelacannebiere"><img  src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""/> <p><strong>Auberge la Cannebière</strong> <br/> Nuit a partir de 25€ <br/> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> </p></a>
 
@@ -70,13 +76,12 @@
                             <a href="#" id="hotelchezamina"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""/> <p><strong>Hôtel chez Amina </strong><br/> Nuit a partir de 96€ <br/> <i class="fas fa-star"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </i> </p></a>
 
                             <a href="#" id="afficherplus">Afficher plus</a>
-
                     </Article>
 
                     <aside>
                         <h2> Les plus populaires </h2>
                         <div id="iconelespluspopulaires">
-                                <i id="fas fa-sort-amount-up"></i>
+                                <i class="fas fa-sort-amount-up"></i>
                         </div>
                                 <a href="#" id="hotellesoleildumatin"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" /> <p><strong>Hôtel le soleil du matin</strong> <br/> Nuit a partir de 128€ <br/><br/> <i class="fas fa-star"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </i> </p> </a>
 
@@ -86,7 +91,7 @@
                         
                     </aside>
                 </section>
-                    <h2>Activités a Marseille</h2>
+                    <h2 id="activites">Activités a Marseille</h2>
                 <div id="sessiondepagebas">
 
                                 <a href="#" id="vieuxport"><img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" /> <p> Vieux port </p></a> 
@@ -101,7 +106,7 @@
 
                                 <a href="#" id="parclongchamp"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" /> <p> Parc Longchamp </p></a> 
 
-                    </div>
+                </div>
 
                 <footer>
 
@@ -128,6 +133,10 @@
                             <li><a href="#">Centre d'aide</a></li>
                             <li><a href="#">Nous contacter</a></li>
                         </ul>
+                    </div>
+
+                    <div id="remplissage">
+                        <a href="#">Remplissage</a>
                     </div>
                 </footer>
         </div>

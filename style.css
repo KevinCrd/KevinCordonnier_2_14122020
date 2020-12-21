@@ -3,7 +3,7 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('police\Raleway.ttf');
+    src: url('police/Raleway.ttf');
     font-weight: normal;
     font-style: 'normal';
 }
@@ -43,6 +43,11 @@ header
 
 }
 /* Navigation */
+
+nav
+{
+    margin-top: 2%;
+}
 
 nav ul
 {
@@ -109,15 +114,16 @@ h1, h2
 #filtres
 {
     display: flex;
-    margin-right: 20px;
+    margin: 20px;
     flex-wrap: nowrap;
     justify-content: justify;
 }
 #filtres p
 {
-    display: flex;
+    position: relative;
+    right: 1%;
     font-weight: bold;
-    margin-right: 10px;
+
 
 }
 #filtres a
@@ -125,24 +131,20 @@ h1, h2
     display: flex;
     border-radius: 0px 10px 10px 0px;
     padding: 6px 5px 0px 5px;
-    margin: 8px 9px 8px 0px;
+    margin: 1% 1% 1% 0%;
     text-decoration: none;
     text-align: center;
     border: 3px #F2F2F2 solid;
     font-weight: bold;
 
 }
-#filtres i
+#logoeconomique
 {
-    display: flex;
-    border-radius: 15px 0px 0px 15px;
-    border: 1px #8ab6f8 solid;
-    margin: 15px 0px 10px 0px;
-    padding: 6px 0px 0px 5px;
-    background-color: #8ab6f8 ;
-    text-align: center;
-    width: 25px;
-    height: 25px;
+    position: relative;
+    bottom: 82%;
+    height: 15%;
+    border: 7px #0065FC solid;
+    border-radius: 50%;
 
 }
 #logementdisponible i
@@ -339,22 +341,22 @@ aside
     flex-wrap: wrap;
     flex-direction: column;
     height: 582px;
-    width: 400px;
+    max-width: 35%;
 }
 aside h2
 {
     height: 20px;
-    width: 200px;
+    width: 80%;
     margin-left: 25px;
 }
 #iconelespluspopulaires
 {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 6px 5px 0px 5px;
-    border-radius: 8px 0px 0px 8px;
-    margin: 16px 0px 16px 0px;
+    position: relative;
+    left: 88%;
+    bottom: 6%;
+    height: 5%;
+    width: 5%;
 }
 #hotellesoleildumatin
 {
@@ -586,3 +588,30 @@ aside h2
 }
 
 /* Footer */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+}
+
+footer a, ul, li
+{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+#apropos
+{
+    margin: 0 0 1% 2%;
+}
+
+#remplissage
+{
+    visibility: hidden;
+}
