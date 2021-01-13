@@ -59,15 +59,22 @@ nav li
 nav a
 {
     font-size: 1.3em;
-    color: #0065FC;
+    color: #760001;
     padding-bottom: 3px;
     text-decoration: none;
+    border-top: 3px solid white;
+    padding-top: 35px;
 }
 
 nav a:hover
 {
-    color: #760001;
-    border-bottom: 3px solid #760001;
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+nav .lien2 a
+{
+    font-weight: bold;
+    color: #0065FC;
 }
 
 /* Section de page haut */
@@ -90,10 +97,6 @@ h1, h2
     flex-basis: 10%;
     margin-left: 4%;
 }
-#rechercher i
-{
-    visibility: hidden;
-}
 #modulederecherche a
 {
     background-color: #0065FC;
@@ -112,6 +115,11 @@ h1, h2
     background-color: #F2F2F2;
     border-radius: 8px 0px 0px 8px;
     margin: 16px 0px 16px 0px;
+}
+#post
+{
+    opacity: 0.2;
+    color: black;
 }
 #lieu
 {
@@ -144,6 +152,7 @@ h1, h2
 #filtres a
 {
     text-decoration: none;
+    color: black;
 }
 
 #filtres a:hover
@@ -248,7 +257,7 @@ section strong
 section a
 {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 section i
 {
@@ -275,7 +284,11 @@ article h2
     height: 2%;
     margin-left: 25px;
 }
-
+article span
+{
+    font-weight: bold;
+    color: black;
+}
 .propositionhebergement
 {
     background-color: white;
@@ -319,6 +332,11 @@ aside
     flex-direction: column;
     height: 582px;
     max-width: 35%;
+}
+aside span
+{
+    font-weight: bold;
+    color: black;
 }
 aside h2
 {
@@ -514,6 +532,7 @@ footer a, ul, li
 {
     text-decoration: none;
     list-style-type: none;
+    color: black;
     padding: 0;
     margin: 0 0 5px 0;
 }
@@ -533,7 +552,11 @@ footer a, ul, li
 
 @media all and (max-width: 480px)
 {
-
+    /* body */
+    body
+    {
+        margin:0;
+    }
     /* Header */
     header
     {
@@ -549,28 +572,12 @@ footer a, ul, li
         width: 40%;
         margin-left: 4%;
     }
-    /* rechercher */
-
-    #rechercher i 
-    {
-        display: flex;
-        position: relative;
-        left: 2%;
-        bottom: 6px;
-        visibility: visible;
-    }
-    #rechercher span 
-    {
-        visibility: hidden;
-    }
-    #modulederecherche a 
-    {
-        width: 25px;
-        margin: 16px 0px 16px 0px;
-        padding: 0px 0px 0px 10px;
-        font-size: 0.8em;
-    }
     /* Navigation */
+    nav
+    {
+        border-bottom: 3px solid #F2F2F2;
+        margin-left: 15px;
+    }
     nav li
     {
         margin-right: 10%;
@@ -580,6 +587,17 @@ footer a, ul, li
     {
         font-size: 1.5em;
         margin-left: 15%;
+        border-top: 0px;
+    }
+    nav a:hover 
+    {
+        border-top: 0px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+    nav .lien2 a
+    {
+        border-bottom: 0;
     }
     h1
     {
@@ -629,9 +647,10 @@ footer a, ul, li
     /* Section */
     section
     {
-        display:flex;
-        justify-content: space-around;
+        display: flex;
+        justify-content: flex-start;
         flex-direction: column;
+        width: fit-content;
     }
     article
     {
@@ -664,9 +683,10 @@ footer a, ul, li
 
     aside
     {
-        max-width: 100%;
-        height: auto;
+        max-width: max-content;
+        height: 100%;
         order: 1;
+        border-radius: 0 0 0 0;
     }
     aside p
     {
@@ -678,13 +698,13 @@ footer a, ul, li
     }
     .propositionlespluspopulaires
     {
-        width: 80%;
-        height: 50%;
+        width: 85%;
+        height: 100%;
     }
     .propositionlespluspopulaires img
     {
-        height: 140px;
-        width: 50%;
+        height: 150px;
+        width: 150px;
     }
     /* session de page bas */
 
@@ -696,10 +716,11 @@ footer a, ul, li
     
     #vieuxport
     {
-        padding: 5px 5px 0px 5px;
-        margin: 5px 5px 2% 5px;
+        padding-bottom: 10px;
+        margin: 5px 5px 2% 20px;
+        box-shadow: outset 0px 0px 1px #f2f2f200;
         width: 90%;
-        height: 50%;
+        height: 200px;
     }
     #vieuxport img
     {
@@ -708,10 +729,11 @@ footer a, ul, li
     }
     #fortdepomegues
     {
-        padding: 5px 5px 0px 5px;
-        margin: 5px 5px 2% 5px;
+        padding-bottom: 10px;
+        margin: 5px 5px 2% 20px;
+        box-shadow: outset 0px 0px 1px #f2f2f200;
         width: 90%;
-        height: 50%;
+        height: 200px;
     }
     #fortdepomegues img
     {
@@ -721,10 +743,11 @@ footer a, ul, li
     }
     #parcnationaldescalanques
     {
-        padding: 5px 5px 0px 5px;
-        margin: 5px 5px 2% 5px;
+        padding-bottom: 10px;
+        margin: 5px 5px 2% 20px;
+        box-shadow: outset 0px 0px 1px #f2f2f200;
         width: 90%;
-        height: 50%;
+        height: 200px;
     }
     #parcnationaldescalanques img
     {
@@ -733,10 +756,11 @@ footer a, ul, li
     }
     #notredamedelagarde
     {
-        padding: 5px 5px 0px 5px;
-        margin: 5px 5px 2% 5px;
+        padding-bottom: 10px;
+        margin: 5px 5px 2% 20px;
+        box-shadow: outset 0px 0px 1px #f2f2f200;
         width: 90%;
-        height: 50%;
+        height: 200px;
     }
     #notredamedelagarde img
     {
@@ -745,10 +769,11 @@ footer a, ul, li
     }
     #ilesdufrioul
     {
-        padding: 5px 5px 0px 5px;
-        margin: 5px 5px 2% 5px;
+        padding-bottom: 10px;
+        margin: 5px 5px 2% 20px;
+        box-shadow: outset 0px 0px 1px #f2f2f200;
         width: 90%;
-        height: 50%;
+        height: 200px;
     }
     #ilesdufrioul img
     {
@@ -757,10 +782,11 @@ footer a, ul, li
     }
     #parclongchamp
     {
-        padding: 5px 5px 0px 5px;
-        margin: 5px 5px 5% 5px;
+        padding-bottom: 10px;
+        margin: 5px 5px 2% 20px;
+        box-shadow: outset 0px 0px 1px #f2f2f200;
         width: 90%;
-        height: 50%;
+        height: 200px;
     }
     #parclongchamp img
     {
@@ -772,6 +798,7 @@ footer a, ul, li
     {
         flex-direction: column;
         height: 20%;
+        border-radius: 0 0 0 0;
     }
     h3
     {
