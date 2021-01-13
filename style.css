@@ -97,6 +97,10 @@ h1, h2
     flex-basis: 10%;
     margin-left: 4%;
 }
+#rechercher i
+{
+    visibility: hidden;
+}
 #modulederecherche a
 {
     background-color: #0065FC;
@@ -571,6 +575,27 @@ footer a, ul, li
         height: 40%;
         width: 40%;
         margin-left: 4%;
+    }
+    /* rechercher */
+
+    #rechercher i 
+    {
+        display: flex;
+        position: relative;
+        left: 2%;
+        bottom: 6px;
+        visibility: visible;
+    }
+    #rechercher span 
+    {
+        visibility: hidden;
+    }
+    #modulederecherche a 
+    {
+        width: 25px;
+        margin: 16px 0px 16px 0px;
+        padding: 0px 0px 0px 10px;
+        font-size: 0.8em;
     }
     /* Navigation */
     nav
