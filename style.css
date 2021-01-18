@@ -76,6 +76,8 @@ nav .lien2 a
 {
     font-weight: bold;
     color: #0065FC;
+    border-top: 3px solid white;
+    
 }
 
 /* Section de page haut */
@@ -108,6 +110,10 @@ h1, h2
     font-size: 0.9em;
     text-decoration:none;
     color: white;
+}
+#modulederecherche a i
+{
+    visibility: hidden;
 }
 #logordv
 {
@@ -573,6 +579,23 @@ footer a, ul, li
         height: 40%;
         width: 40%;
         margin-left: 4%;
+    }
+    /* module de recherche */
+    #modulederecherche a
+    {
+        margin: 16px 0px 16px 0px;
+        padding: 5px 0px 0px 0px;
+    }
+    #modulederecherche span
+    {
+        visibility: hidden;
+        font-size: 0.2em;
+    }
+    #modulederecherche a i
+    {
+        visibility:visible;
+        position:relative;
+        right: 18px;
     }
     /* Navigation */
     nav
