@@ -14,6 +14,7 @@ body
 {
     font-family: 'Raleway';
     background-color: white;
+    margin: auto;
 }
 
 /* Header */
@@ -96,10 +97,6 @@ h1, h2
     justify-content: flex-start;
     flex-basis: 10%;
     margin-left: 4%;
-}
-#rechercher i
-{
-    visibility: hidden;
 }
 #modulederecherche a
 {
@@ -554,12 +551,13 @@ footer a, ul, li
 
 
 
-@media all and (max-width: 480px)
+@media all and (max-width: 780px)
 {
     /* body */
     body
     {
-        margin:0;
+        margin: auto;
+        padding: auto;
     }
     /* Header */
     header
@@ -575,27 +573,6 @@ footer a, ul, li
         height: 40%;
         width: 40%;
         margin-left: 4%;
-    }
-    /* rechercher */
-
-    #rechercher i 
-    {
-        display: flex;
-        position: relative;
-        left: 2%;
-        bottom: 6px;
-        visibility: visible;
-    }
-    #rechercher span 
-    {
-        visibility: hidden;
-    }
-    #modulederecherche a 
-    {
-        width: 25px;
-        margin: 16px 0px 16px 0px;
-        padding: 0px 0px 0px 10px;
-        font-size: 0.8em;
     }
     /* Navigation */
     nav
@@ -708,7 +685,7 @@ footer a, ul, li
 
     aside
     {
-        max-width: max-content;
+        max-width: 100%;
         height: 100%;
         order: 1;
         border-radius: 0 0 0 0;
